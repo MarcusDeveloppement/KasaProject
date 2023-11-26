@@ -1,0 +1,18 @@
+.underline {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 500;
+  a {
+    color: var(--primary);
+    margin-left: 4rem;
+  }
+  img {
+    width: 210px;
+  }
+}

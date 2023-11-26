@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 3rem 4.5rem 0 4.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -17,4 +22,8 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
