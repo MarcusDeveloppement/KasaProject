@@ -10,7 +10,7 @@ export default function Navbar() {
           to="/"
           className={({ isActive }) => `${isActive && styles.underline} `}
         >
-          Acceuil
+          Accueil
         </NavLink>
         <NavLink
           to="/apropos"
