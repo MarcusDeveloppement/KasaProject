@@ -1,0 +1,40 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(70%) grayscale(35%) contrast(130%);
+    opacity: 0.88;
+  }
+}
+
+.container {
+  width: 80%;
+
+  h2 {
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    background-color: var(--gray);
+    margin: 0 0 25px 0;
+    padding: 1.2rem;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.card {
+  margin-bottom: 1rem;
+}

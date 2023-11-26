@@ -3,6 +3,7 @@ import Acceuil from "./components/Acceuil";
 import Apropos from "./components/Apropos";
 import NotFound from "./components/NotFound";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <Footer></Footer>
     </>
   );
 }

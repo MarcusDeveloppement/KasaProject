@@ -3,7 +3,7 @@ import styles from "./Navbar.module.scss";
 import Kasa from "../assets/images/logo_kasa.png";
 export default function Navbar() {
   return (
-    <div className={styles.navbar}>
+    <div className={` space-content ${styles.navbar}`}>
       <img src={Kasa} alt="Logo kasa" />
       <nav>
         <NavLink
