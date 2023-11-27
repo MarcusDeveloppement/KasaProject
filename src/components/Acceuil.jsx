@@ -1,6 +1,7 @@
 import styles from "./Acceuil.module.scss";
 import nature from "../assets/images/nature.png";
 
+import { NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import jsonData from "../data/Api.json";
 
@@ -35,11 +36,13 @@ export default function Acceuil() {
       </div>
       <div className={styles.cardContainer}>
         {data.map((item) => (
-          <div className={styles.imgContainer} key={item.id}>
-            <img src={item.cover} alt={item.title} />
-            <h3>{item.title}</h3>
-            <div className={styles.shadow}></div>
-          </div>
+          <NavLink to={`/logement/${item.id}`} key={item.id}>
+            <div className={styles.imgContainer} key={item.id}>
+              <img src={item.cover} alt={item.title} />
+              <h3>{item.title}</h3>
+              <div className={styles.shadow}></div>
+            </div>{" "}
+          </NavLink>
         ))}
       </div>
     </section>
