@@ -1,0 +1,17 @@
+.host {
+  display: flex;
+  align-items: center;
+  p {
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+  img {
+    border-radius: 50%;
+    width: 64px;
+  }
+}
+.name {
+  width: 90px;
+  text-align: end;
+  margin-right: 1rem;
+}

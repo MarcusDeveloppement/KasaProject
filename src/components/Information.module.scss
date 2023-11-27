@@ -1,0 +1,44 @@
+.infoContent {
+  display: flex;
+  margin: 0 6rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.describe {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  h3 {
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  p {
+    padding: 0.5rem;
+    background-color: var(--gray);
+  }
+}
+.equipments {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  h3 {
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  ul {
+    padding: 0.5rem;
+    background-color: var(--gray);
+  }
+}
+
+.chevrons {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}

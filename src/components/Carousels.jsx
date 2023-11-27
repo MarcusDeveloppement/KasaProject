@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import jsonData from "../data/Api.json";
 import styles from "./Carousels.module.scss";
 
@@ -24,7 +24,7 @@ const CarouselComponent = ({ id }) => {
     if (id && data.length > 0) {
       const filteredItem = data.find((item) => item.id === id);
       setFilteredData(filteredItem ? filteredItem.pictures : []);
-      setCurrentImageIndex(0); // Réinitialiser l'index de l'image actuelle à chaque changement d'ID
+      setCurrentImageIndex(0);
     }
   }, [id, data]);
 
