@@ -1,0 +1,28 @@
+.MenuContainer {
+  position: absolute;
+  top: 100px;
+  right: 24px;
+  width: 200px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    &:hover {
+      color: var(--text-color);
+      background-color: var(--primary);
+      border-radius: 10px;
+    }
+  }
+}
+
+.hidden {
+  display: none; /* Cacher le conteneur du menu */
+}

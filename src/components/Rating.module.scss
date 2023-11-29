@@ -1,6 +1,19 @@
+@use "../assets/styles/mixins" as mixin;
+
 .stars {
   color: var(--primary);
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  @include mixin.ultra-sm {
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+    margin-top: 1rem;
+  }
+  @include mixin.md {
+    width: 10rem;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 }

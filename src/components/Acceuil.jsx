@@ -29,22 +29,24 @@ export default function Acceuil() {
     return <div>Une erreur est survenue : {error}</div>;
   }
   return (
-    <section className={styles.sectionCard}>
+    <>
       <div className={styles.topContainer}>
         <img src={nature} alt="image nature" />
         <h2>Chez vous, partout et ailleurs</h2>
       </div>
-      <div className={styles.cardContainer}>
-        {data.map((item) => (
-          <NavLink to={`/logement/${item.id}`} key={item.id}>
-            <div className={styles.imgContainer} key={item.id}>
-              <img src={item.cover} alt={item.title} />
-              <h3>{item.title}</h3>
-              <div className={styles.shadow}></div>
-            </div>{" "}
-          </NavLink>
-        ))}
-      </div>
-    </section>
+      <section className={styles.sectionCard}>
+        <div className={styles.cardContainer}>
+          {data.map((item) => (
+            <NavLink to={`/logement/${item.id}`} key={item.id}>
+              <div className={styles.imgContainer} key={item.id}>
+                <img src={item.cover} alt={item.title} />
+                <h3>{item.title}</h3>
+                <div className={styles.shadow}></div>
+              </div>{" "}
+            </NavLink>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

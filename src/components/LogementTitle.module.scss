@@ -1,3 +1,4 @@
+@use "../assets/styles/mixins" as mixin;
 .text {
   color: var(--primary);
   margin-bottom: 1.5rem;
@@ -5,5 +6,8 @@
     margin-bottom: 0.5rem;
     font-weight: 500;
     font-size: 2rem;
+    @include mixin.md-sm {
+      width: 16rem;
+    }
   }
 }

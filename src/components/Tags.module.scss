@@ -1,7 +1,13 @@
+@use "../assets/styles/mixins" as mixin;
 .tag {
   display: flex;
   align-items: center;
   gap: 20px;
+  @include mixin.md {
+    justify-content: flex-end;
+    grid-template-columns: repeat(2, auto);
+    display: grid;
+  }
   p {
     background-color: var(--primary);
     color: var(--text-color);

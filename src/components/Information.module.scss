@@ -1,38 +1,91 @@
+@use "../assets/styles/mixins" as mixin;
+
 .infoContent {
   display: flex;
   margin: 0 6rem;
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  @include mixin.md-lt {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  @include mixin.md-sm {
+    margin: 1rem 2rem;
+  }
 }
 .describe {
   display: flex;
   flex-direction: column;
   width: 40%;
+  overflow: hidden;
+  height: 0;
+  animation: revealText 0.5s forwards;
+  @include mixin.md-lt {
+    width: 100%;
+  }
   h3 {
     background-color: var(--primary);
     color: var(--text-color);
     padding: 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   p {
     padding: 0.5rem;
     background-color: var(--gray);
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-5%);
+    animation: fadeInUp 0.5s forwards;
+  }
+  @keyframes revealText {
+    100% {
+      height: auto;
+    }
+  }
+
+  @keyframes fadeInUp {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 .equipments {
   display: flex;
   flex-direction: column;
   width: 40%;
+  overflow: hidden;
+  height: 0;
+  animation: revealText 0.5s forwards;
+  @include mixin.md-lt {
+    width: 100%;
+  }
 
   h3 {
     background-color: var(--primary);
     color: var(--text-color);
     padding: 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   ul {
     padding: 0.5rem;
     background-color: var(--gray);
+    opacity: 0;
+    transform: translateY(-5%);
+    animation: fadeInUp 0.5s forwards;
+  }
+  @keyframes revealText {
+    100% {
+      height: auto;
+    }
+  }
+
+  @keyframes fadeInUp {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 

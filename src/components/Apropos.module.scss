@@ -1,3 +1,5 @@
+@use "../assets/styles/mixins" as mixin;
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -13,6 +15,18 @@
     border-radius: 20px;
     filter: brightness(70%) grayscale(35%) contrast(130%);
     opacity: 0.88;
+    @include mixin.lg-md {
+      width: 870px;
+    }
+    @include mixin.md {
+      width: 670px;
+    }
+    @include mixin.md-sm {
+      width: 365px;
+    }
+    @include mixin.ultra-sm {
+      width: 300px;
+    }
   }
 }
 
@@ -37,4 +51,24 @@
 
 .card {
   margin-bottom: 1rem;
+  overflow: hidden;
+  height: 0;
+  animation: revealText 0.5s forwards;
+  p {
+    opacity: 0;
+    transform: translateY(-5%);
+    animation: fadeInUp 0.5s forwards;
+  }
+  @keyframes revealText {
+    100% {
+      height: auto;
+    }
+  }
+
+  @keyframes fadeInUp {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

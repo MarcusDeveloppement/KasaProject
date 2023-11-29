@@ -55,8 +55,8 @@ export default function Information({ id }) {
           Description{" "}
           <span>
             <i
-              className={`fa-solid fa-chevron-${
-                showDescription ? "up" : "down"
+              className={`fa-solid fa-chevron-down ${
+                showDescription ? "rotate" : "default-icon"
               }`}
             ></i>
           </span>
@@ -69,8 +69,8 @@ export default function Information({ id }) {
           Équipements{" "}
           <span>
             <i
-              className={`fa-solid fa-chevron-${
-                showEquipments ? "up" : "down"
+              className={`fa-solid fa-chevron-down ${
+                showEquipments ? "rotate" : "default-icon"
               }`}
             ></i>
           </span>

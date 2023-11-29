@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom"; // Si tu utilises React Router
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import jsonData from "../data/Api.json";
 import styles from "./Logement.module.scss";
 import CarouselComponent from "./Carousels";
@@ -10,8 +10,19 @@ import Profile from "./Profile";
 import Information from "./Information";
 
 export default function Logement() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const selectedData = jsonData.find((item) => item.id === id);
+
+  useEffect(() => {
+    if (!selectedData) {
+      navigate("/notfound");
+    }
+  }, [selectedData, navigate]);
+
+  if (!selectedData) {
+    return null;
+  }
 
   return (
     <>

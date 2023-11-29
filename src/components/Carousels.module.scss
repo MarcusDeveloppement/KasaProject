@@ -1,3 +1,5 @@
+@use "../assets/styles/mixins" as mixin;
+
 .imgContainer {
   position: relative;
   display: flex;
@@ -11,6 +13,21 @@
     height: 415px;
     object-fit: cover;
     border-radius: 15px;
+    @include mixin.lg {
+      width: 1000px;
+    }
+    @include mixin.lg-md {
+      width: 680px;
+    }
+    @include mixin.md-lt {
+      width: 410px;
+    }
+    @include mixin.sm {
+      width: 350px;
+    }
+    @include mixin.ultra-sm {
+      width: 305px;
+    }
   }
   .chevrons {
     display: flex;
@@ -19,6 +36,32 @@
     gap: 1100px;
     font-size: 3rem;
     color: var(--text-color);
+    i:hover {
+      color: var(--primary);
+      cursor: pointer;
+    }
+    @include mixin.lg {
+      gap: 800px;
+    }
+    @include mixin.lg-md {
+      gap: 580px;
+    }
+    @include mixin.md-lt {
+      width: 505px;
+      gap: 300px;
+    }
+    @include mixin.md-sm {
+      width: 378px;
+      gap: 254px;
+    }
+    @include mixin.md-sm {
+      width: 330px;
+      gap: 236px;
+    }
+    @include mixin.md-sm {
+      width: 300px;
+      gap: 200px;
+    }
   }
 }
 .elemContent {

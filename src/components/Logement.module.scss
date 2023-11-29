@@ -1,7 +1,12 @@
+@use "../assets/styles/mixins" as mixin;
 .tagRate {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  @include mixin.md-lt {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .subtitle {
   margin: 0 6.2rem;
@@ -9,4 +14,10 @@
 .hostTitle {
   display: flex;
   justify-content: space-between;
+  @include mixin.md-lt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+  }
 }

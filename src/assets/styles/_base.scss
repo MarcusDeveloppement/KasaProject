@@ -1,3 +1,5 @@
+@use "./mixins" as mixin;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +11,9 @@ body {
 
 .space-content {
   margin: 3rem 6.5rem 0 6.5rem;
+  @include mixin.md {
+    margin: 3rem 1.5rem 0 1.5rem;
+  }
 }
 
 h1,
