@@ -55,20 +55,24 @@ const CarouselComponent = ({ id }) => {
       {imageCount > 0 && (
         <div className={styles.imgContainer}>
           <div className={styles.elemContent}>
-            <p>{` ${currentImageIndex + 1}/${imageCount}`}</p>
-            <img
-              src={filteredData[currentImageIndex]}
-              alt={`Photo ${currentImageIndex + 1}`}
-            />
+            {imageCount > 1 && (
+              <p>{` ${currentImageIndex + 1}/${imageCount}`}</p>
+            )}
           </div>
-          <div className={styles.chevrons}>
-            <span onClick={goToPrevious}>
-              <i className="fa-solid fa-chevron-left"></i>
-            </span>
-            <span onClick={goToNext}>
-              <i className="fa-solid fa-chevron-right"></i>
-            </span>
-          </div>
+          <img
+            src={filteredData[currentImageIndex]}
+            alt={`Photo ${currentImageIndex + 1}`}
+          />
+          {imageCount > 1 && (
+            <div className={styles.chevrons}>
+              <span onClick={goToPrevious}>
+                <i className="fa-solid fa-chevron-left"></i>
+              </span>
+              <span onClick={goToNext}>
+                <i className="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+          )}
         </div>
       )}
     </div>

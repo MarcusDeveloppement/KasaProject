@@ -14,13 +14,16 @@
 
   a {
     color: var(--primary);
-    margin-left: 4rem;
   }
   img {
     width: 170px;
+    margin-left: 0px;
   }
 }
 .navList {
+  a {
+    margin-left: 4rem;
+  }
   @include mixin.md {
     display: none;
   }
