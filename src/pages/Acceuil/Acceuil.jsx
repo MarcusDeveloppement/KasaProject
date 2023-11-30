@@ -1,9 +1,9 @@
 import styles from "./Acceuil.module.scss";
-import nature from "../assets/images/nature.png";
+import nature from "../../assets/images/nature.png";
 
 import { NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import jsonData from "../data/Api.json";
+import jsonData from "../../data/Api.json";
 
 export default function Acceuil() {
   const [data, setData] = useState([]);

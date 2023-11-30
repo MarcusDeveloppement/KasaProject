@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import styles from "./Apropos.module.scss";
-import Mount from "../assets/images/mountain.png";
+import Mount from "../../assets/images/mountain.png";
 
 export default function Apropos() {
   const [isVisible, setIsVisible] = useState(false);

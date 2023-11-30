@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import jsonData from "../data/Api.json";
+import jsonData from "../../data/Api.json";
 import styles from "./Rating.module.scss";
 
 export default function Rating({ id }) {

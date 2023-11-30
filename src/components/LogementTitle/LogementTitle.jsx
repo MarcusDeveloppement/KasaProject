@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import jsonData from "../data/Api.json";
-import styles from "./Tags.module.scss";
+import jsonData from "../../data/Api.json";
+import styles from "./LogementTitle.module.scss";
 
-export default function Tags({ id }) {
+export default function LogementTitle({ id }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [tags, setTags] = useState([]);
+  const [title, setTitle] = useState("");
+  const [location, setLocation] = useState("");
 
   useEffect(() => {
     try {
@@ -22,7 +23,8 @@ export default function Tags({ id }) {
   useEffect(() => {
     if (id && data.length > 0) {
       const filteredItem = data.find((item) => item.id === id);
-      setTags(filteredItem ? filteredItem.tags : []);
+      setTitle(filteredItem ? filteredItem.title : "");
+      setLocation(filteredItem ? filteredItem.location : "");
     }
   }, [id, data]);
 
@@ -35,10 +37,9 @@ export default function Tags({ id }) {
   }
 
   return (
-    <div className={styles.tag}>
-      {tags.map((tag, index) => (
-        <p key={index}>{tag}</p>
-      ))}
+    <div className={styles.text}>
+      <h2>{title}</h2>
+      <p>{location}</p>
     </div>
   );
 }

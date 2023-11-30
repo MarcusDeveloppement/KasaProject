@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-import Kasa from "../assets/images/logo_kasa.png";
-import NavBarMenu from "./NavBarMenu";
+import Kasa from "../../assets/images/logo_kasa.png";
+import NavBarMenu from "../HamburgerMenu/NavBarMenu";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,7 +34,7 @@ export default function Navbar() {
         {showMenu && (
           <>
             <div onClick={() => setShowMenu(false)} className="calc"></div>
-            <NavBarMenu setShowMenu={setShowMenu} /> {/* Passer setShowMenu */}
+            <NavBarMenu setShowMenu={setShowMenu} />
           </>
         )}
       </span>

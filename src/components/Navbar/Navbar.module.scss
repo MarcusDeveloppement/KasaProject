@@ -1,7 +1,8 @@
-@use "../assets/styles/mixins" as mixin;
+@use "../../assets/styles/mixins" as mixin;
 
 .underline {
   text-decoration: underline;
+  width: 1rem;
 }
 
 .navbar {
@@ -22,7 +23,10 @@
 }
 .navList {
   a {
-    margin-left: 4rem;
+    padding: 1.2rem;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   @include mixin.md {
     display: none;

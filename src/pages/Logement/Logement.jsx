@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import jsonData from "../data/Api.json";
+import jsonData from "../../data/Api.json";
 import styles from "./Logement.module.scss";
-import CarouselComponent from "./Carousels";
-import LogementTitle from "./LogementTitle";
-import Tags from "./tags";
-import Rating from "./Rating";
-import Profile from "./Profile";
-import Information from "./Information";
+import CarouselComponent from "../../components/Carousels/Carousels";
+import Information from "../../components/Information/Information";
+import LogementTitle from "../../components/LogementTitle/LogementTitle";
+import Profile from "../../components/Profile/Profile";
+import Rating from "../../components/Rating/Rating";
+import Tags from "../../components/Tags/Tags";
 
 export default function Logement() {
   const navigate = useNavigate();

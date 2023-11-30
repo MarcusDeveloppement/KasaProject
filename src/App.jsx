@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Acceuil from "./components/Acceuil";
-import Apropos from "./components/Apropos";
-import NotFound from "./components/NotFound";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Logement from "./components/logement";
+import Acceuil from "./pages/Acceuil/Acceuil";
+import Apropos from "./pages/Apropos/Apropos";
+import NotFound from "./components/NotFound/NotFound";
+import Logement from "./pages/Logement/Logement";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

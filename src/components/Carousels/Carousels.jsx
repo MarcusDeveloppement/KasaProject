@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import jsonData from "../data/Api.json";
+import jsonData from "../../data/Api.json";
 import styles from "./Carousels.module.scss";
 
 const CarouselComponent = ({ id }) => {

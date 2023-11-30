@@ -1,4 +1,4 @@
-import WhiteLogo from "../assets/images/whiteLogo.png";
+import WhiteLogo from "../../assets/images/whiteLogo.png";
 
 import styles from "./Footer.module.scss";
 
