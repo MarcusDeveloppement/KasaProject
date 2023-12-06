@@ -2,11 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import Kasa from "../../assets/images/logo_kasa.png";
-import NavBarMenu from "../HamburgerMenu/NavBarMenu";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <div className={` space-content ${styles.navbar}`}>
       <NavLink to="/">
@@ -17,27 +14,15 @@ export default function Navbar() {
           to="/"
           className={({ isActive }) => `${isActive && styles.underline} `}
         >
-          Accueil
+          ACCUEIL
         </NavLink>
         <NavLink
           to="/apropos"
           className={({ isActive }) => `${isActive && styles.underline}`}
         >
-          A Propos
+          A PROPOS
         </NavLink>
       </nav>
-      <span className={styles.headerXs}>
-        <i
-          onClick={() => setShowMenu(!showMenu)}
-          className="fa-solid fa-bars mr-15"
-        ></i>
-        {showMenu && (
-          <>
-            <div onClick={() => setShowMenu(false)} className="calc"></div>
-            <NavBarMenu setShowMenu={setShowMenu} />
-          </>
-        )}
-      </span>
     </div>
   );
 }

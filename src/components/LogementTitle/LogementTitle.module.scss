@@ -2,12 +2,27 @@
 .text {
   color: var(--primary);
   margin-bottom: 1.5rem;
+  @include mixin.sm {
+    p {
+      font-size: 14px;
+    }
+  }
+  @include mixin.md-sm {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
   h2 {
     margin-bottom: 0.5rem;
     font-weight: 500;
     font-size: 2rem;
     @include mixin.md-sm {
-      width: 16rem;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    @include mixin.sm {
+      font-size: 18px;
     }
   }
 }

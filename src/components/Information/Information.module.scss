@@ -13,6 +13,9 @@
   @include mixin.md-sm {
     margin: 1rem 2rem;
   }
+  @include mixin.sm {
+    margin: 1rem 1.5rem;
+  }
 }
 .describe {
   display: flex;
@@ -29,6 +32,10 @@
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    @include mixin.sm {
+      font-size: 13px;
+      font-weight: 400;
+    }
   }
   p {
     padding: 0.5rem;
@@ -37,6 +44,9 @@
     opacity: 0;
     transform: translateY(-5%);
     animation: fadeInUp 0.5s forwards;
+    @include mixin.sm {
+      font-size: 13px;
+    }
   }
   @keyframes revealText {
     100% {
@@ -67,6 +77,10 @@
     color: var(--text-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    @include mixin.sm {
+      font-size: 13px;
+      font-weight: 400;
+    }
   }
   ul {
     padding: 0.5rem;
@@ -74,6 +88,9 @@
     opacity: 0;
     transform: translateY(-5%);
     animation: fadeInUp 0.5s forwards;
+    @include mixin.sm {
+      font-size: 13px;
+    }
   }
   @keyframes revealText {
     100% {

@@ -1,17 +1,31 @@
+@use "../../assets/styles/mixins" as mixin;
 .host {
   display: flex;
   align-items: center;
   p {
     color: var(--primary);
     font-size: 1.1rem;
+    @include mixin.sm {
+      font-size: 12px;
+      width: 5rem;
+    }
   }
   img {
     border-radius: 50%;
     width: 64px;
+    @include mixin.sm {
+      width: 38px;
+    }
+  }
+  @include mixin.md-sm {
+    margin-right: 2rem;
   }
 }
 .name {
   width: 90px;
   text-align: end;
   margin-right: 1rem;
+  @include mixin.sm {
+    margin-right: 0;
+  }
 }

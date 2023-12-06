@@ -13,6 +13,17 @@
     height: 415px;
     object-fit: cover;
     border-radius: 15px;
+    @include mixin.sm {
+      width: 335px !important;
+      height: 255px !important;
+    }
+    @include mixin.ultra-sm {
+      width: 305px;
+    }
+    @include mixin.md-sm {
+      width: 380px !important;
+      height: 331px;
+    }
     @include mixin.lg {
       width: 1000px;
     }
@@ -21,12 +32,6 @@
     }
     @include mixin.md-lt {
       width: 410px;
-    }
-    @include mixin.sm {
-      width: 350px;
-    }
-    @include mixin.ultra-sm {
-      width: 305px;
     }
   }
   .chevrons {
@@ -40,6 +45,14 @@
       color: var(--primary);
       cursor: pointer;
     }
+    @include mixin.sm {
+      width: 317px !important;
+      gap: 194px !important;
+    }
+    @include mixin.md-sm {
+      width: 378px;
+      gap: 254px;
+    }
     @include mixin.lg {
       gap: 800px;
     }
@@ -49,14 +62,6 @@
     @include mixin.md-lt {
       width: 390px;
       gap: 300px;
-    }
-    @include mixin.md-sm {
-      width: 378px;
-      gap: 254px;
-    }
-    @include mixin.md-sm {
-      width: 380px;
-      gap: 210px;
     }
     @include mixin.md-sm {
       width: 300px;

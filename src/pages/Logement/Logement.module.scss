@@ -9,15 +9,44 @@
   }
 }
 .subtitle {
-  margin: 0 6.2rem;
+  margin: 0 6.2rem 2rem 6.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include mixin.sm {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include mixin.md-sm {
+    margin: 0;
+    display: block;
+  }
 }
 .hostTitle {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   @include mixin.md-lt {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     margin: 1.5rem;
+  }
+  @include mixin.sm {
+    margin: 0.5rem;
+  }
+}
+.profilRate {
+  display: flex;
+  flex-direction: column-reverse;
+  @include mixin.sm {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 0.6rem;
+  }
+  @include mixin.md-sm {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

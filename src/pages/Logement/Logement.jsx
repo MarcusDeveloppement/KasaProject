@@ -30,11 +30,11 @@ export default function Logement() {
       <div className={styles.subtitle}>
         <div className={styles.hostTitle}>
           <LogementTitle id={selectedData.id} />
-          <Profile id={selectedData.id} />
-        </div>
-        <div className={styles.tagRate}>
           <Tags id={selectedData.id} />
+        </div>
+        <div className={styles.profilRate}>
           <Rating id={selectedData.id} />
+          <Profile id={selectedData.id} />
         </div>
       </div>
       <Information id={selectedData.id} />

@@ -14,6 +14,9 @@ body {
   @include mixin.md {
     margin: 3rem 1.5rem 0 1.5rem;
   }
+  @include mixin.sm {
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
 }
 
 h1,

@@ -12,6 +12,9 @@
   font-size: 1.4rem;
   font-weight: 500;
   padding-bottom: 1.2rem;
+  @include mixin.sm {
+    padding-bottom: 0.2rem;
+  }
 
   a {
     color: var(--primary);
@@ -19,37 +22,33 @@
   img {
     width: 170px;
     margin-left: 0px;
+    @include mixin.sm {
+      width: 134px;
+    }
+    @include mixin.ultra-sm {
+      width: 114px;
+    }
+    @include mixin.md-sm {
+      width: 145px;
+    }
   }
 }
 .navList {
   a {
     padding: 1.2rem;
+    @include mixin.sm {
+      font-size: 12px;
+      padding: 0.8rem;
+    }
+    @include mixin.ultra-sm {
+      font-size: 10px;
+    }
+    @include mixin.md-sm {
+      font-size: 14px;
+      padding: 0.8rem;
+    }
     &:hover {
       text-decoration: underline;
     }
-  }
-  @include mixin.md {
-    display: none;
-  }
-}
-
-.headerXs {
-  display: none;
-  cursor: pointer;
-  i {
-    transition: 0.2s opacity;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
-  ul {
-    font-size: 1.5rem;
-  }
-  @include mixin.md {
-    display: block;
-    font-size: 2rem;
-    color: var(--primary);
-    z-index: 5;
   }
 }
