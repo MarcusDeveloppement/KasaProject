@@ -40,7 +40,7 @@ export default function Rating({ id }) {
       if (i <= rating) {
         stars.push(<i className="fa-solid fa-star" key={i}></i>);
       } else {
-        stars.push(<i className="fa-regular fa-star" key={i}></i>);
+        stars.push(<i className="fa-solid fa-star grey" key={i}></i>);
       }
     }
     return stars;

@@ -16,6 +16,9 @@
   @include mixin.sm {
     margin: 1rem 1.5rem;
   }
+  @include mixin.tab-sm {
+    margin: 1rem 2rem;
+  }
 }
 .describe {
   display: flex;

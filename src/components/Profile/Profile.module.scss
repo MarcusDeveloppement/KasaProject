@@ -2,6 +2,9 @@
 .host {
   display: flex;
   align-items: center;
+  @include mixin.tab-sm {
+    margin-right: 1rem;
+  }
   p {
     color: var(--primary);
     font-size: 1.1rem;

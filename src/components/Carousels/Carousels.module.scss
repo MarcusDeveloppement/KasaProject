@@ -33,6 +33,9 @@
     @include mixin.md-lt {
       width: 410px;
     }
+    @include mixin.tab-sm {
+      width: 486px;
+    }
   }
   .chevrons {
     display: flex;
@@ -49,10 +52,7 @@
       width: 317px !important;
       gap: 194px !important;
     }
-    @include mixin.md-sm {
-      width: 378px;
-      gap: 254px;
-    }
+
     @include mixin.lg {
       gap: 800px;
     }
@@ -60,12 +60,13 @@
       gap: 580px;
     }
     @include mixin.md-lt {
-      width: 390px;
+      width: 449px;
       gap: 300px;
     }
     @include mixin.md-sm {
-      width: 300px;
+      width: 345px;
       gap: 200px;
+      font-size: 2rem;
     }
   }
 }

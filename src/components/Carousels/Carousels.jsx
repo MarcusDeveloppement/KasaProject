@@ -66,10 +66,10 @@ const CarouselComponent = ({ id }) => {
           {imageCount > 1 && (
             <div className={styles.chevrons}>
               <span onClick={goToPrevious}>
-                <i className="fa-solid fa-chevron-left"></i>
+                <i className="fa-solid fa-chevron-left chevSize"></i>
               </span>
               <span onClick={goToNext}>
-                <i className="fa-solid fa-chevron-right"></i>
+                <i className="fa-solid fa-chevron-right chevSize"></i>
               </span>
             </div>
           )}

@@ -24,5 +24,8 @@
     @include mixin.sm {
       font-size: 18px;
     }
+    @include mixin.tab-sm {
+      font-size: 1.5rem;
+    }
   }
 }

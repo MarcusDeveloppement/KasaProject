@@ -23,6 +23,9 @@
     margin: 0;
     display: block;
   }
+  @include mixin.tab-sm {
+    margin: 0;
+  }
 }
 .hostTitle {
   display: flex;

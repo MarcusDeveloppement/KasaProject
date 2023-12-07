@@ -41,11 +41,21 @@ a {
 }
 
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transition: transform 0.5s ease;
 }
 
 .default-icon {
   transform: rotate(0);
   transition: transform 0.5s ease;
+}
+
+.grey {
+  color: #e1dfdf;
+}
+
+.chevSize {
+  @include mixin.sm {
+    font-size: 2rem;
+  }
 }

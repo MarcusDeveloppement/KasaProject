@@ -35,7 +35,7 @@ export default function Apropos() {
               Fiabilité{" "}
               <span>
                 <i
-                  className={`fa-solid fa-chevron-down ${
+                  className={`fa-solid fa-chevron-up ${
                     isVisible ? "rotate" : "default-icon"
                   }`}
                 ></i>
@@ -56,7 +56,7 @@ export default function Apropos() {
               Respect{" "}
               <span>
                 <i
-                  className={`fa-solid fa-chevron-down ${
+                  className={`fa-solid fa-chevron-up ${
                     isRespectVisible ? "rotate" : "default-icon"
                   }`}
                 ></i>
@@ -75,7 +75,7 @@ export default function Apropos() {
               Service{" "}
               <span>
                 <i
-                  className={`fa-solid fa-chevron-down ${
+                  className={`fa-solid fa-chevron-up ${
                     isServiceVisible ? "rotate" : "default-icon"
                   }`}
                 ></i>
@@ -94,7 +94,7 @@ export default function Apropos() {
               Sécurité{" "}
               <span>
                 <i
-                  className={`fa-solid fa-chevron-down ${
+                  className={`fa-solid fa-chevron-up ${
                     isSecureVisible ? "rotate" : "default-icon"
                   }`}
                 ></i>
